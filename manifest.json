@@ -1,0 +1,32 @@
+{
+    "name": "Google Meet Calendar Autocall",
+    "version": "1.0",
+    "description": "Uses google calendar to automatically open the google meet tab.",
+    "manifest_version": 3,
+    "action": {
+        "default_title": "FriendBlock, friends face's in a block.",
+        "default_popup": "popup.html"
+    }, 
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "identity",
+        "alarms",
+        "background",
+        "identity.email"
+        
+    ],
+    "oauth2": {
+        "client_id": "137332974021-kf3e12didg7k9tvl36jt4obn1etibq54.apps.googleusercontent.com",
+        "scopes": [
+            "https://www.googleapis.com/auth/calendar.readonly"
+        ]
+    },
+    "icons": {
+        "16": "assets/icons/meet_logo.png",
+        "32": "assets/icons/meet_logo.png",
+        "48": "assets/icons/meet_logo.png",
+        "128": "assets/icons/meet_logo.png"
+      }
+}
